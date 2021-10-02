@@ -5,20 +5,19 @@ using namespace std;
 int main()
 
 {
+//Задание 1
+setlocale(LC_ALL, "Russian");
+float a, b;
+cout << "Введите сторону a: ";
+cin >> a;
+cout << "Введите сторону b: ";
+cin >> b;
+float s = a * b;
+cout << "Площадь равна: " << s << endl;
+float p = 2 * (a + b);
+cout << "Периметр равен: " << p << endl;
 
-	//Задание 1
-	setlocale(LC_ALL, "Russian");
-	float a, b;
-	cout << "Введите сторону a: ";
-	cin >> a;
-	cout << "Введите сторону b: ";
-	cin >> b;
-	float s = a * b;
-  cout << "Площадь равна: " << s << endl;
-  float p = 2 * (a + b);
-  cout << "Периметр равен: " << p << endl;
-
-	//Задание 2
+//Задание 2
   cout << "Задание 2" << '\n';
   int d;
   cout << "Введите значение диаметра окружности: ";
@@ -27,37 +26,37 @@ int main()
   L = 3.14 * d;
   cout << "Длина окружности равна: " << L << endl;
 
-	//Задание 3
-	cout << "Задание 3" << '\n';
-	int a, b;
-	cin >> a >> b;
-	cout << "Среднее арифм.: " << (a + b) / 2 << endl;
-	
+//Задание 3
+cout << "Задание 3" << '\n';
+int a, b;
+cin >> a >> b;
+cout << "Среднее арифм.: " << (a + b) / 2 << endl;
 
-	//Задание 4
-	cout << "Задание 4" << '\n';
-	float a, b;
-	cout << "a: ";
-	cin >> a;
-	cout << "b: ";
-	cin >> b;
-	cout << pow(a, 2) + pow(b, 2) << endl;
-	cout << pow(a, 2) - pow(b, 2) << endl;
-	cout << pow(a, 2) * pow(b, 2) << endl;
-	cout << pow(a, 2) / pow(b, 2) << endl;
 
-	//Задание 5
-	cout << "Задание 5" << '\n';
-	float a, b;
-	cout << "a: ";
-	cin >> a;
-	cout << "b: ";
-	cin >> b;
-	cout << abs(a) + abs(b) << endl;
-	cout << abs(a) - abs(b) << endl;
-	cout << abs(a) * abs(b) << endl;
-	cout << abs(a) / abs(b) << endl;
+//Задание 4
+cout << "Задание 4" << '\n';
+float a, b;
+cout << "a: ";
+cin >> a;
+cout << "b: ";
+cin >> b;
+cout << pow(a, 2) + pow(b, 2) << endl;
+cout << pow(a, 2) - pow(b, 2) << endl;
+cout << pow(a, 2) * pow(b, 2) << endl;
+cout << pow(a, 2) / pow(b, 2) << endl;
+
+//Задание 5
+cout << "Задание 5" << '\n';
+float a, b;
+cout << "a: ";
+cin >> a;
+cout << "b: ";
+cin >> b;
+cout << abs(a) + abs(b) << endl;
+cout << abs(a) - abs(b) << endl;
+cout << abs(a) * abs(b) << endl;
+cout << abs(a) / abs(b) << endl;
 	
-	return 0;
+return 0;
 
 }
