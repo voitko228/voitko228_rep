@@ -1,75 +1,78 @@
-#include <iostream>
+// ВВП(4 задание).cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//
 
+#include <iostream>
+#include <math.h>
 using namespace std;
 
 int main()
 
 {
-//Задание 1
-setlocale(LC_ALL, "Russian");
-float a, b;
-cout << "Введите сторону a: ";
-cin >> a;
-cout << "Введите сторону b: ";
-cin >> b;
-float s = a * b;
-cout << "Площадь равна: " << s << endl;
-float p = 2 * (a + b);
-cout << "Периметр равен: " << p << endl;
+	//Задание 1
+	setlocale(LC_ALL, "Russian");
+	float a, b;
+	cout << "Введите сторону a: ";
+	cin >> a;
+	cout << "Введите сторону b: ";
+	cin >> b;
+	float s = a * b;
+	cout << "Площадь равна: " << s << endl;
+	float p = 2 * (a + b);
+	cout << "Периметр равен: " << p << endl;
 
-//Задание 2
-  cout << "Задание 2" << '\n';
-  int d;
-  cout << "Введите значение диаметра окружности: ";
-  cin >> d;
-  float L;
-  L = 3.14 * d;
-  cout << "Длина окружности равна: " << L << endl;
+	//Задание 2
+	cout << "Задание 2" << '\n';
+	int d;
+	cout << "Введите значение диаметра окружности: ";
+	cin >> d;
+	float L;
+	L = 3.14 * d;
+	cout << "Длина окружности равна: " << L << endl;
 
-//Задание 3
-cout << "Задание 3" << '\n';
-int a, b;
-cin >> a >> b;
-cout << "Среднее арифм.: " << (a + b) / 2 << endl;
+	//Задание 3
+	cout << "Задание 3" << '\n';
+	int a, b;
+	cin >> a >> b;
+	cout << "Среднее арифм.: " << (a + b) / 2 << endl;
 
 
-//Задание 4
-cout << "Задание 4" << '\n';
-float a, b;
-cout << "a: ";
-cin >> a;
-cout << "b: ";
-cin >> b;
-if (a, b > 0)
-{
-	cout << pow(a, 2) + pow(b, 2) << endl;
-	cout << pow(a, 2) - pow(b, 2) << endl;
-	cout << pow(a, 2) * pow(b, 2) << endl;
-	cout << pow(a, 2) / pow(b, 2) << endl;
-}
-else (a, b == 0);
-{
-	cout << "нет решений" << endl;
-}
+	//Задание 4
+	cout << "Задание 4" << '\n';
+	float a, b;
+	cout << "a: ";
+	cin >> a;
+	cout << "b: ";
+	cin >> b;
+	if (a, b > 0)
+	{
+		cout << pow(a, 2) + pow(b, 2) << endl;
+		cout << pow(a, 2) - pow(b, 2) << endl;
+		cout << pow(a, 2) * pow(b, 2) << endl;
+		cout << pow(a, 2) / pow(b, 2) << endl;
+	}
+	else (a, b == 0);
+	{
+		cout << "нет решений" << endl;
+	}
 
-//Задание 5
-cout << "Задание 5" << '\n';
-float a, b;
-cout << "a: ";
-cin >> a;
-cout << "b: ";
-cin >> b;
-if (a, b > 0)
-{
-	cout << abs(a) + abs(b) << endl;
-        cout << abs(a) - abs(b) << endl;
-	cout << abs(a) * abs(b) << endl;
-	cout << abs(a) / abs(b) << endl;
-}
-else (a,b == 0)
-{
-	cout << "нет решений" << endl;
-}
-return 0;
+	//Задание 5
+	cout << "Задание 5" << '\n';
+	float a, b;
+	cout << "a: ";
+	cin >> a;
+	cout << "b: ";
+	cin >> b;
+	if (a, b > 0)
+	{
+		cout << abs(a) + abs(b) << endl;
+		cout << abs(a) - abs(b) << endl;
+		cout << abs(a) * abs(b) << endl;
+		cout << abs(a) / abs(b) << endl;
+	}
+	else (a, b == 0);
+	{
+		cout << "нет решений" << endl;
+	}
+	return 0;
 
 }
