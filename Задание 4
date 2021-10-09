@@ -32,7 +32,11 @@ int main()
 	//Задание 3
 	cout << "Задание 3" << '\n';
 	float a, b;
-	cin >> a >> b;
+	cout << "Введите два числа" << '\n'; 
+	cout << "a: ";
+	cin >> a;
+	cout << "b: ";
+	cin >> b;
 	cout << "Среднее арифм.: " << (a + b) / 2 << endl;
 
 
