@@ -67,17 +67,14 @@ int main()
 	cin >> a;
 	cout << "b: ";
 	cin >> b;
-	if (a, b > 0)
-	{
-		cout << "Сумма: ";
-		cout << abs(a) + abs(b) << endl;
-		cout << "Разность: ";
-		cout << abs(a) - abs(b) << endl;
-		cout << "Произведение: ";
-		cout << abs(a) * abs(b) << endl;
-		cout << "Частное: ";
-		cout << abs(a) / abs(b) << endl;
-	}
+	cout << "Сумма: ";
+	cout << abs(a) + abs(b) << endl;
+	cout << "Разность: ";
+	cout << abs(a) - abs(b) << endl;
+	cout << "Произведение: ";
+	cout << abs(a) * abs(b) << endl;
+	cout << "Частное: ";
+	cout << abs(a) / abs(b) << endl;
 	return 0;
 
 }
