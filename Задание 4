@@ -54,10 +54,7 @@ int main()
 		cout << pow(a, 2) * pow(b, 2) << endl;
 		cout << pow(a, 2) / pow(b, 2) << endl;
 	}
-	else (a, b == 0);
-	{
-		cout << "нет решений" << endl;
-	}
+	
 
 	//Задание 5
 	cout << "Задание 5" << '\n';
@@ -72,10 +69,6 @@ int main()
 		cout << abs(a) - abs(b) << endl;
 		cout << abs(a) * abs(b) << endl;
 		cout << abs(a) / abs(b) << endl;
-	}
-	else (a, b == 0);
-	{
-		cout << "нет решений" << endl;
 	}
 	return 0;
 
