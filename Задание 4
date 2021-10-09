@@ -49,9 +49,13 @@ int main()
 	cin >> b;
 	if (a, b > 0)
 	{
+		cout << "Сумма квадратов: ";
 		cout << pow(a, 2) + pow(b, 2) << endl;
+		cout << "Разность квадратов: ";
 		cout << pow(a, 2) - pow(b, 2) << endl;
+		cout << "Произведение квадратов: ";
 		cout << pow(a, 2) * pow(b, 2) << endl;
+		cout << "Частное квадратов: ";
 		cout << pow(a, 2) / pow(b, 2) << endl;
 	}
 	
@@ -65,9 +69,13 @@ int main()
 	cin >> b;
 	if (a, b > 0)
 	{
+		cout << "Сумма: ";
 		cout << abs(a) + abs(b) << endl;
+		cout << "Разность: ";
 		cout << abs(a) - abs(b) << endl;
+		cout << "Произведение: ";
 		cout << abs(a) * abs(b) << endl;
+		cout << "Частное: ";
 		cout << abs(a) / abs(b) << endl;
 	}
 	return 0;
