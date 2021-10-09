@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main() 
+{
+cout << "Задание 1" << '\n';
+cout << "Введите значения" << '\n';
+double x1, y1, x2, y2;
+cout << "x1: ";
+cin >> x1;
+cout << "x2: ";
+cin >> x2;
+cout << "y1: ";
+cin >> y1;
+cout << "y2: ";
+cin >> y2;
+cout << "Расстояние равно: " << fixed << setprecision(2) << sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2)) << endl;
