@@ -33,14 +33,14 @@ int main()
 
 
 	cout << "Задание 3" << '\n';
-	float a, b, c;
+	int a, b, c;
 	cout << "Введите А: ";
 	cin >> a;
 	cout << "Введите В: ";
 	cin >> b;
 	cout << "Введите С: ";
 	cin >> c;
-	if (a >= b || c <= a || c >= b)
+	if (c > a && c < b)
 	{
 		cout << "Произведение отрезков AB и BC = " << (c - a) * (b - c) << " \n";
 	}
@@ -70,7 +70,7 @@ int main()
 	cout << "Площадь данного прямоугольника равна: " << s;
 
 	cout << "Задание 5" << '\n';
-	int a, b, c, s, p, x1, x2, x3, y1, y2, y3;
+	double a, b, c, s, p, x1, x2, x3, y1, y2, y3;
 	cout << "x1: ";
 	cin >> x1;
 	cout << "y1: ";
