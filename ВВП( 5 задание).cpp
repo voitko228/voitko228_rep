@@ -4,7 +4,6 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
-#include <stdio.h>
 using namespace std;
 
 int main()
@@ -20,17 +19,17 @@ int main()
 	cin >> y1;
 	cout << "y2: ";
 	cin >> y2;
-	cout << "Расстояние равно: " << fixed << setprecision(2) << sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2)) << endl;
+	cout << "Расстояние между двумя точками равно: " << sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2)) << endl;
 
-	cout << "Задание 2";
-	int A, B, C;
-	printf("Введите А, B и C (через пробел): ");
-	scanf("%i %i %i", &A, &B, &C);
-	int AC = abs(C - A);
-	int BC = abs(C - B);
-	printf("AC = %i BC = %i\n", AC, BC);
-	printf("AC + BC = %i", AC + BC);
-	return 0;
+	cout << "Задание 2" << '\n';
+	int A, B, C, AC, BC;
+	cout << "Введите А, B и C (через пробел): ";
+	cin >> A >> B >> C;
+	AC = abs(C - A);
+	BC = abs(C - B);
+    	cout << "AC: " << AC << '\n';
+    	cout << "BC: " << BC << '\n';
+	cout << "Сумма длин отрезков: " << AC + BC;
 
 
 	cout << "Задание 3" << '\n';
@@ -43,14 +42,14 @@ int main()
 	cin >> c;
 	if (a >= b || c <= a || c >= b)
 	{
-		cout << "Произведение отрезков AB и BC= " << (c - a) * (b - c) << " \n";
+		cout << "Произведение отрезков AB и BC = " << (c - a) * (b - c) << " \n";
 	}
 	else
 	{
 		cout << "Некоректно введены данные \n";
 	}
 	
-	return 0;
+	
 
 
 	cout << "Задание 4" << '\n';
@@ -67,8 +66,8 @@ int main()
 	b = abs(y2 - y1);
 	p = (a + b) * 2;
 	s = a * b;
-	cout << "P: " << p << '\n';
-	cout << "S: " << s;
+	cout << "Периметр данного прямоугольника равен: " << p << '\n';
+	cout << "Площадь данного прямоугольника равна: " << s;
 
 	cout << "Задание 5" << '\n';
 	int a, b, c, s, p, x1, x2, x3, y1, y2, y3;
@@ -88,7 +87,7 @@ int main()
 	b = sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
 	c = sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3));
 	p = a + b + c;
-	cout << "P: " << p << '\n';
+	cout << "Периметр треугольника равен: " << p << '\n';
 	p = p / 2;
 	s = sqrt(p * (p - a) * (p - b) * (p - c));
-	cout << "S: " << s;
+	cout << "Площадь треугольника равна: " << s;
