@@ -33,20 +33,17 @@ C = X;
 cout << "A': " << A << '\n' << "B': " << B << '\n' << "C': " << C;
 
 cout << "Задание 3" << '\n';   
-float A, B, C, X, Y;
-cout << "A: ";
-cin >> A;
-cout << "B: ";
-cin >> B;
-cout << "C: ";
-cin >> C;
-X = A;
-Y = B;
-A = C;
-B = X;
-C = Y;
-
-cout << "A': " << A << '\n' << "B': " << B << '\n' << "C': " << C;
+float a, b, c, x, y;
+cout << "Введите 3 числа " << endl;
+cout << "A = "; cin >> a;
+cout << "B = "; cin >> b;
+cout << "C = "; cin >> c;
+cout << "\n";
+x = a; y = b;
+a = c; b = x; c = y;
+cout << "A' = " << a << endl;
+cout << "B' = " << b << endl;
+cout << "C' = " << c << endl;
 
 cout << "Задание 4" << '\n';   
 double y;
