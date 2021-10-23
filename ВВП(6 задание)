@@ -73,5 +73,15 @@ x = x * x;
 x = x * x;    
 cout << "А в 8 степени: " << x << endl;
 
-
+cout << "Задание 7" << '\n';   
+double x, y, a;
+cout << "Введите чилсо А: ";
+cin >> a;
+x = a * a; 
+y = x * a; 
+x = x * y; 
+y = x; 
+x = y * y; 
+x = x * y; 
+cout << "А в 15 степени равно: " << x << endl;
 
