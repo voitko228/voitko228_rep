@@ -1,42 +1,46 @@
 #include <iostream>
 #include <stdio.h>
+#include <cmath>
 using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "rus");
-	cout << "Задание 1" << '/n';
-	double pi = 3.14, a, rad;
-	cout << "Введите градусную меру угла" << '/n';
-	cout << "A = ";
-	cin >> a;
-	rad = pi * a / 180; 
-	cout << "Результат: " << rad;
-  
+    setlocale(LC_ALL, "RUS");
 
-	cout << "Задание 2" << '/n' << endl;
-	float a, rad;
-	cout << "Введите значение угла: ";
-	cin >> a;
-	rad = (a * 180) / 3.14;
-	cout << "Результат: " << rad;
-  
-    cout << "Задание 3" << '/n' << endl;  
-    float X, A, Y;
-    cout << "Значение X: ";
+    double pi = 3.14, a, rad, a1, b1, c1, a2, b2, c2, x, y, D;
+    float a11, Rad, X, A, Y, price;
+    int V1, V2, S, T, Result, A11, B11, X11;
+
+    cout << "Задание 1" << endl;
+    cout << "Введите градусную меру угла: ";
+    cin >> a;
+    rad = pi * a / 180;
+    cout << "Результат: " << rad;
+    cout << endl;
+
+
+    cout << "Задание 2" << endl;
+    cout << "Введите значение угла: ";
+    cin >> a11;
+    Rad = (a11 * 180) / 3.14;
+    cout << "Результат: " << Rad;
+    cout << endl;
+
+
+    cout << "Задание 3" << endl;
+    cout << "Значение X(кг): ";
     cin >> X;
-    cout << "Значение A: ";
+    cout << "Значение A(руб): ";
     cin >> A;
-    cout << "Значение Y: ";
+    cout << "Значение Y(кг): ";
     cin >> Y;
-    float price;
     price = A / X;
     cout << "Цена: " << price << endl;
     cout << "Стоимость: " << Y * price;
-    
-    
-    cout << "Задание 4" << '/n' << endl;
-    int V1, V2, S, T, Result;
+    cout << endl;
+
+
+    cout << "Задание 4" << endl;
     cout << "Введите скорость первого автомобился : ";
     cin >> V1;
     cout << "Введите скорость второго автомобиля : ";
@@ -47,35 +51,31 @@ int main()
     cin >> T;
     Result = S + V1 * T + V2 * T;
     cout << "Расстояние между автомабилями через T часов : " << Result;
-    
-    
-    cout << "Задание 5" << '/n' << endl;
-    int A, B, X;
+    cout << endl;
+
+
+    cout << "Задание 5" << endl;
+
     cout << "Введите коэфициент A : ";
-    cin >> A;
+    cin >> A11;
     cout << "Введите коэфициент B : ";
-    cin >> B;
-    X = (-1) * B / A;
-    cout << "X равен : " << X;
-    
-    
-  cout << "Задание 6" << '/n' << endl;
-  double a1, b1, c1, a2, b2, c2, x, y, D;
-	cout << "Введите коэффициенты 1-го уровнения: ";
-	cin >> a1 >> b1 >> c1;
-	cout << endl;
-	cout << "Введите коэффициенты 2-го уравнения: ";
-	cin >> a2 >> b2 >> c2;
-  D = a1 * b2 - a2 * b1;
-	x = (c1 * b2 - c2 * b1) / D;
-	y = (a1 * c2 - a2 * c1) / D;
-  cout << "x = " << x << endl;
-	cout << "y = " << y << endl;
-  
-  
- return 0;
- }
-    
-  
-  
-  
+    cin >> B11;
+    X11 = (-1) * B11 / A11;
+    cout << "X равен : " << X11;
+    cout << endl;
+
+
+    cout << "Задание 6" << endl;
+    cout << "Введите коэффициенты 1-го уровнения: ";
+    cin >> a1 >> b1 >> c1;
+    cout << "Введите коэффициенты 2-го уравнения: ";
+    cin >> a2 >> b2 >> c2;
+    D = a1 * b2 - a2 * b1;
+    x = (c1 * b2 - c2 * b1) / D;
+    y = (a1 * c2 - a2 * c1) / D;
+    cout << "x = " << x << endl;
+    cout << "y = " << y << endl;
+
+
+    return 0;
+}
