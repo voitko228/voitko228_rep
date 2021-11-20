@@ -1,0 +1,118 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "Rus");
+	int A, B; //1
+	int A1, B1, C1; //2
+	int A3; //3
+	int A4; //4
+	int A5; //5
+	int a1, b1, c1; //6
+	int a2, b2, c2; //7
+	cout << "Задание 1" << endl;
+	cout << "A:";
+	cin >> A;
+	cout << endl;
+	cout << "B:";
+	cin >> B;
+	if (A > 2 && B <= 3) {
+		cout << "Истинно";
+	}
+	else {
+		cout << "Ложь";
+	}
+	cout << endl;
+	cout << "__________________________________";
+	cout << endl;
+
+
+	cout << "Задание 2" << endl;
+	cout << "A:";
+	cin >> A1;
+	cout << "B:";
+	cin >> B1;
+	cout << "C:";
+	cin >> C1;
+	if (A1 < B1 && B1 < C1) {
+		cout << "Истинно" << '\n';
+	}
+	else {
+		cout << "Ложь" << '\n';
+	}
+	cout << "__________________________________";
+	cout << endl;
+
+
+	cout << "Задание 3" << endl;
+	cout << "A:";
+	cin >> A3;
+	if (A3 % 2 == 0 && A3 > 9 && A3 < 100) {
+		cout << "Истинно" << '\n';
+	}
+	else
+	{
+		cout << "Ложь" << '\n';
+	}
+	cout << "__________________________________";
+	cout << endl;
+
+
+	cout << "Задание 4" << endl;
+	cout << "A:";
+	cin >> A4;
+	if ((A4 / 100) > (A4 % 100 / 10) && (A4 % 100 / 10) > (A4 % 10) || (A4 / 100) < (A4 % 100 / 10) && (A4 % 100 / 10) < (A4 % 10)) {
+		cout << "Истинно" << '\n';
+	}
+	else {
+		cout << "Ложь" << '\n';
+	}
+	cout << "__________________________________";
+	cout << endl;
+
+	cout << "Задание 5" << endl;
+	cout << "A:";
+	cin >> A5;
+	A5 = abs(A5);
+	if (A5 % 10 == A5 / 1000 & A5 % 100 / 10 == A5 % 1000 / 100) {
+		cout << "Истинно" << '\n';
+	}
+	else {
+		cout << "Ложь" << '\n';
+	}
+	cout << "__________________________________";
+	cout << endl;
+
+	cout << "Задание 6" << endl;
+	cout << "A:";
+	cin >> a1;
+	cout << "B:";
+	cin >> b1;
+	cout << "C:";
+	cin >> c1;
+	if ((a1 * a1 == b1 * b1 + c1 * c1) || (b1 * b1 == a1 * a1 + c1 * c1) || (c1 * c1 == a1 * a1 + b1 * b1)) {
+		cout << "Истинно" << '\n';
+	}
+	else {
+		cout << "Ложь" << '\n';
+	}
+	cout << "__________________________________";
+	cout << endl;
+
+
+	cout << "Задание 7" << endl;
+	cout << "A:";
+	cin >> a2;
+	cout << "B:";
+	cin >> b2;
+	cout << "C:";
+	cin >> c2;
+	if ((a2 + b2) > c2 && (a2 + c2) > b2 && (b2 + c2) > a2) {
+		cout << "Истинно";
+	}
+	else {
+		cout << "Ложь";
+	}
+
+	return 0;
+}
