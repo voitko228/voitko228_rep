@@ -1,0 +1,146 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int a, b; //1
+    //2
+    int x, y, z;
+    int max1, max2;
+    //3
+    float a1, b1, c1, a1b1, a1c1;
+    //4
+    int x1, y1;
+    //5
+    int num;
+    //6
+    int a2;
+
+    cout << "Задание 1" << endl;
+    cout << "Введите число a: ";
+    cin >> a;
+    cout << "Введите чисо b: ";
+    cin >> b;
+    if (a != b)
+    {
+        if (a > b)
+            b = a;
+        else
+            a = b;
+    }
+    else
+    {
+        a = 0;
+        b = 0;
+    }
+    cout << "A = " << a << endl;
+    cout << "B = " << b << endl;
+    cout << "__________________________________";
+    cout << endl;
+
+
+    cout << "Задание 2" << endl;
+    cout << "Введите числа: ";
+    cin >> x;
+    cin >> y;
+    cin >> z;
+    if (x > y)
+    {
+        max1 = x;
+        if (y > z)
+            max2 = y;
+        else
+            max2 = z;
+    }
+    else
+    {
+        max1 = y;
+        if (x > z)
+            max2 = x;
+        else
+            max2 = z;
+
+    }
+    int sum = max1 + max2;
+    cout << "Сумма =  " << sum << '\n';
+    cout << "__________________________________";
+    cout << endl;
+
+
+    cout << "Задание 3" << endl;
+    cout << "Введите числа: ";
+    cin >> a1 >> b1 >> c1;
+    a1b1 = abs(a1 - b1);
+    a1c1 = abs(a1 - c1);
+    if (a1b1 < a1c1) {
+        cout << "Точка В ближе к А. Расстояние равно " << a1b1 << '\n';
+    }
+    if (a1c1 < a1b1) {
+        cout << "Точка C ближе к А. Расстояние равно " << a1c1 << '\n';
+    }
+    if (a1b1 == a1c1) {
+        cout << "Точки B и С равноудалены от точки A" << '\n';
+    }
+    cout << "__________________________________";
+    cout << endl;
+
+
+    cout << "Задание 4" << endl;
+    cout << "Введите значения: ";
+    cin >> x1;
+    cin >> y1;
+    if (x1 > 0)
+    {
+        if (y1 > 0)
+            cout << "1" << '\n';
+        else
+            cout << "3" << '\n';
+    }
+    else
+    {
+        if (y1 > 0)
+            cout << "2" << '\n';
+        else
+            cout << "4" << '\n';
+    }
+    cout << "__________________________________";
+    cout << endl;
+
+
+
+    cout << "Задание 5" << endl;
+    cout << "Число: ";
+    cin >> num;
+    if (num == 0) {
+        cout << "Нулевое";
+    }
+    else {
+        if (num > 0)
+            cout << "Положительное " << '\n';
+        else
+            cout << "Отрицательное " << '\n';
+        if ((num % 2) == 0)
+            cout << "чётное ";
+        else
+            cout << "нечётное ";
+    }
+    cout << "число" << '\n';
+    cout << "__________________________________";
+    cout << endl;
+
+
+
+    cout << "Задание 6" << endl;
+    cout << "Число в диапозоне от 1-999: ";
+    cin >> a2;
+    if (a2 % 2 == 0);
+    else cout << "не";
+    cout << "четное ";
+    if (a2 / 100 > 0 && a2 / 100 < 10) cout << "трехзначное ";
+    else if (a2 / 10 > 0 && a2 / 10 < 10) cout << "двухзначное ";
+    else if (a2 / 10 == 0) cout << "однозначное ";
+    cout << "число";
+    cout << endl;
+
+    return 0;
+}
