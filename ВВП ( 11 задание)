@@ -1,4 +1,6 @@
 #include <iostream>
+#include <stdio.h>
+#include <cmath>
 using namespace std;
 int main()
 {
@@ -8,9 +10,10 @@ int main()
     int x, y, z;
     int max1, max2;
     //3
-    float a1, b1, c1, a1b1, a1c1;
+    
+    float x1, x2, x3, y1, y2, y3, d1, d2;
     //4
-    int x1, y1;
+    float x4, y4;
     //5
     int num;
     //6
@@ -68,18 +71,20 @@ int main()
 
 
     cout << "Задание 3" << endl;
-    cout << "Введите числа: ";
-    cin >> a1 >> b1 >> c1;
-    a1b1 = abs(a1 - b1);
-    a1c1 = abs(a1 - c1);
-    if (a1b1 < a1c1) {
-        cout << "Точка В ближе к А. Расстояние равно " << a1b1 << '\n';
-    }
-    if (a1c1 < a1b1) {
-        cout << "Точка C ближе к А. Расстояние равно " << a1c1 << '\n';
-    }
-    if (a1b1 == a1c1) {
-        cout << "Точки B и С равноудалены от точки A" << '\n';
+    
+    cout << "Введите две координаты точки A." << endl;
+    cin >> x1 >> y1;
+    cout << "Введите две координаты точки B." << endl;
+    cin >> x2 >> y2;
+    cout << "Введите две координаты точки C." << endl;
+    cin >> x3 >> y3;
+
+    d1 = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    d2 = sqrt((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1));
+    if (d1 == d2) { cout << "Расстояние между точками A и B, A и C равно между собой. Равно  " << d1 << "." << endl; }
+    if (d1 < d2) { cout << "Точка B расположена ближе к точке A, ее расстояние от точки A равно " << d1 << "." << endl; }
+    else {
+        if (d1 != d2) cout << "Точка C расположена ближе к точке A, ее расстояние от точки A равно " << d2 << "." << endl;
     }
     cout << "__________________________________";
     cout << endl;
@@ -87,24 +92,22 @@ int main()
 
     cout << "Задание 4" << endl;
     cout << "Введите значения: ";
-    cin >> x1;
-    cin >> y1;
-    if (x1 > 0)
-    {
-        if (y1 > 0)
-            cout << "1" << '\n';
-        else
-            cout << "3" << '\n';
+    cin >> x4 >> y4;
+    if ((x4 > 0) && (y4 > 0)) {
+        cout << "I" << '\n';
     }
-    else
-    {
-        if (y1 > 0)
-            cout << "2" << '\n';
-        else
-            cout << "4" << '\n';
+    else if ((x4 < 0) && (y4 > 0)) {
+        cout << "II" << '\n';
+    }
+    else if ((x4 < 0) && (y4 < 0)) {
+        cout << "III" << '\n';
+    }
+    else {
+        cout << "IV" << '\n';
     }
     cout << "__________________________________";
     cout << endl;
+    
 
 
 
